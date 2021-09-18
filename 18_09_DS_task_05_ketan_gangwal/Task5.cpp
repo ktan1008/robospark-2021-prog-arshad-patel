@@ -40,28 +40,34 @@ int main()
     int option = 3;
     cin >> option;
 
-    switch (Option)
+    switch (option)
     {
-    case 1:
+    case(1):
+    {
         Rectangle r1;
-        r1.area;
+        r1.area();
         break;
+    }
 
-    case 2:
+    case (2):
+    {
         float l, b;
         cout<<"Enter the value of length and breadth"<<endl;
-        cin>>l>>b>>endl;
+        cin>>l>>b;
         Rectangle r2(l,b);
         r2.area();
         break;
+    }
 
-    case 3:
+    case (3):
+    {
         float a;
         cout<<"Enter the value of length=breadth"<<endl;
         cin>>a;
         Rectangle r3(a);
         r3.area();
         break;
+    }
 
     }
     return 0;
